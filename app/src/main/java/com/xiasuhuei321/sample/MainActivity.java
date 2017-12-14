@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn1:
-                ld = new LoadingDialog(this,false);
+                ld = new LoadingDialog(this);
                 ld.setInterceptBack(intercept_back_event)
                         .setLoadingText("加载中...")
                         .setLoadStyle(style)
